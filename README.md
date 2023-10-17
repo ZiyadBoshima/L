@@ -15,7 +15,7 @@ start:
 end start
 ```
 ### Variable Definition
-To define a variable, use `[mov]` operator likeso:
+To define a variable, use `[mov]` operator like so:
 <pre>
 <em>Variable  Value</em>  [mov]
 </pre>
@@ -35,7 +35,7 @@ or
 <em>Value Value</em> [operator]
 </pre>
 ### Print
-In order to print results in the console, L provides the `show{}` function, and can be used likeso:
+In order to print results in the console, L provides the `show{}` function, and can be used like so:
 <pre>
 show{<em>Something</em>}
 </pre>
