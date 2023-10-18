@@ -16,7 +16,7 @@ In order for L code to run, it should be written inside `code.el`.
 <pre>
 ./
 &emsp;L.rkt
-&emsp;<strong>code.el<strong>
+&emsp;<strong>code.el</strong>
 &emsp;LICENSE
 &emsp;README.md
 </pre>
