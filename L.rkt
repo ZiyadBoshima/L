@@ -22,7 +22,7 @@
   (hash-ref my-hash (string->symbol var-name) #f))
 
 ; Lexer
-(define OurLexer
+(define LLexer
            (lexer
             ; Indicators
             ["start:" (token-START)]
@@ -83,10 +83,10 @@
             [(re::(re:: (re:or (re:: "-" numeric) numeric)(re:* numeric))(re::"."(re:+ numeric)))(token-FLOAT (string->number lexeme))]
                         
             ; Recursively calls the lexer which effectively skips whitespace
-            (whitespace (OurLexer input-port))
+            (whitespace (LLexer input-port))
             ))
 ; Parser
-(define OurParser
+(define LParser
            (cfg-parser
             ; First non-termnial
             (start program)
@@ -189,14 +189,6 @@
 (define (lex-this lexer input) (lambda () (lexer input)))
 
 
-(let ((input (open-input-string
-"start:
-
-show{'1 + 2 is '| 1 2 [add] | .n}
-show{.n}
-[tell me a joke]
-
-end start"
-)))
-
-(OurParser (lex-this OurLexer input)))
+(let ((input (open-input-file "code.el")))
+(LParser (lex-this LLexer input)))
+(printf "\n")

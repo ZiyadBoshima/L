@@ -6,7 +6,25 @@
  - Syed Abdulrahim
 ## Usage
 ### Setup
-To use L, begin your code with “start:” and end it with “end start”. The body of the program will be between two curly braces, like so:
+To get started clone this repo:
+```
+git clone https://github.com/ZiyadBoshima/L.git
+```
+Ensure you have the [racket](https://docs.racket-lang.org/pollen/Installation.html) command line tool installed.
+
+In order for L code to run, it should be written inside `code.el`.
+<pre>
+./
+&emsp;L.rkt
+&emsp;<strong>code.el<strong>
+&emsp;LICENSE
+&emsp;README.md
+</pre>
+To run L code, run the following command in the terminal:
+```
+racket L.rkt
+```
+To code in L, begin your code with “start:” and end it with “end start”. The body of the program will be between two curly braces, like so:
 ```
 start:
 {
@@ -57,4 +75,22 @@ convert(<em>variable_or_value</em>)
 If at times programming feels mundane&mdash;<em>hopefully never with the L language</em>&mdash;run this function:
 ```
 [tell me a joke]
+```
+### Example
+./code.el
+```
+start: 
+
+show{'1 + 2 is '| 1 2 [add] | .n | .n} 
+
+[tell me a joke] 
+
+end start
+```
+output: 
+```
+1 + 2 is 3
+
+How did the hipster burn the roof of his mouth?
+He ate the pizza before it was cool.
 ```
