@@ -175,7 +175,6 @@
              (recursive-space [[POINT recursive-space] (string-append " " $2)]
                               [[POINT] " "]
                               [[NLINE] "\n"])
-
              )
             )
   )
