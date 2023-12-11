@@ -3,7 +3,7 @@
 ## Authors
  - [Ahmed Ba Matraf](https://github.com/AhmedBamatraf)
  - [Ziyad Salem Boshima](https://github.com/ZiyadBoshima)
- - Syed Abdulrahim
+ - [Syed Abdulrahim](https://github.com/SAsaberi)
 ## Usage
 ### Setup
 To get started clone this repo:
