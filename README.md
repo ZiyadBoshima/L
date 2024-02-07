@@ -1,5 +1,5 @@
 # L
-**L** is a postfix-oriented programming language that offers basic operations, such as arithmetic operations and logical operations, and other extra operations, like “tell me a joke”. The language uses some constructs similar to assembly languages. There are also unique constructs.
+**L** is a postfix-oriented programming language that offers basic operations, such as arithmetic operations and logical operations, and other extra operations, like “tell me a joke”. The language uses some constructs similar to assembly languages. There are also other unique constructs.
 ## Authors
  - [Ahmed Ba Matraf](https://github.com/AhmedBamatraf)
  - [Ziyad Salem Boshima](https://github.com/ZiyadBoshima)
